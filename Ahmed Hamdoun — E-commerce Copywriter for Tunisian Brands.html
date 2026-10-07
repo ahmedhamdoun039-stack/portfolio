@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Hamdoun — E-commerce Copywriter for Tunisian Brands</title>
+<meta name="description" content="Ahmed Hamdoun is a freelance e-commerce copywriter helping Tunisian brands sell more with words: Meta ads, UGC scripts, product pages and VSLs in Darija, Arabic, French and English.">
+<meta property="og:title" content="Ahmed Hamdoun — I turn words into reasons to buy">
+<meta property="og:description" content="E-commerce copywriter for Tunisian brands. Hooks, Meta ads, scripts, offers.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Cairo:wght@500;700&family=Caveat:wght@600&display=swap">
+<style>
+:root{--bg:#fbf6e1;--fg:#1b1b3a;--mute:#585878;--line:#1b1b3a3d;--ac:#ffd23f;--act:#1b1b3a;--s2:#b8c4ff;--s3:#ffffff;--s4:#ffe58a;--k:#1b1b3a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);height:auto}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.55 "Bricolage Grotesque",system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.ar{font-family:"Cairo","Segoe UI",Tahoma,sans-serif;direction:rtl;unicode-bidi:isolate}
+.wrap{padding:0 clamp(18px,5vw,64px);max-width:1400px;margin:0 auto}
+section{padding:clamp(70px,11vw,150px) 0;border-top:1px solid var(--line)}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.045em;line-height:.95}
+h2{font-size:clamp(38px,7.4vw,108px)}
+.lead{font-size:clamp(18px,2vw,24px);max-width:34em;color:var(--mute)}
+.mk{background:linear-gradient(var(--fg),var(--fg)) 0 96%/100% .08em no-repeat}
+.note{font-family:Caveat,cursive;font-size:24px;color:var(--act);display:inline-block;transform:rotate(-4deg)}
+.btn{display:inline-flex;align-items:center;gap:.5em;min-height:48px;padding:0 24px;border:1.5px solid var(--fg);border-radius:99px;text-decoration:none;font-weight:700;transition:.25s}
+.btn.fill{background:var(--fg);color:var(--bg)}
+.btn:hover,.btn:focus-visible{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.btn.fill:hover,.btn.fill:focus-visible{background:transparent;color:var(--fg)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:.3s}
+header.st{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;letter-spacing:-.04em;text-decoration:none;font-size:20px}
+.links{display:flex;gap:28px;align-items:center}
+.links a{text-decoration:none;position:relative;font-weight:500}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:right;transition:transform .35s}
+.links a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
+.links .btn{min-height:40px;padding:0 18px}
+.logo{margin-right:auto}.links{order:2}
+.burger{display:none;background:none;border:0;width:48px;height:48px;color:var(--fg);cursor:pointer}
+.burger i{display:block;width:24px;height:2px;background:currentColor;margin:6px auto;transition:.3s}
+@media(max-width:760px){.burger{display:block}.links{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;gap:22px;font-size:40px;font-weight:800;letter-spacing:-.04em;transform:translateY(-100%);transition:transform .5s cubic-bezier(.7,0,.2,1)}.links .btn{font-size:18px}header.open .links{transform:none}header.open .burger{position:relative;z-index:2}header.open .burger i:first-child{transform:translateY(4px) rotate(45deg)}header.open .burger i:last-child{transform:translateY(-4px) rotate(-45deg)}}
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:110px 0 60px;border:0}
+.status{display:inline-flex;align-items:center;gap:10px;font-weight:500;font-size:15px;margin-bottom:28px}
+.dot{width:10px;height:10px;border-radius:50%;background:#1fb35a;animation:pl 2s infinite}
+@keyframes pl{50%{box-shadow:0 0 0 7px #1fb35a22}}
+.hero h1{font-size:clamp(52px,13vw,200px);line-height:.88}
+.hero h1 span{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 span b{display:block;font-weight:800;transform:translateY(105%);animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 span:nth-child(2) b{animation-delay:.12s}.hero h1 span:nth-child(3) b{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.hero .row{display:flex;flex-wrap:wrap;gap:28px 60px;align-items:flex-end;justify-content:space-between;margin-top:44px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.float{position:absolute;right:clamp(12px,6vw,90px);top:32%;font-size:clamp(20px,3vw,34px);text-align:center;pointer-events:none}
+@media(max-width:760px){.float{display:none}}
+/* marquee */
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:22px 0;background:var(--fg);color:var(--bg)}
+.mq div{display:flex;width:max-content;animation:mq 38s linear infinite}
+.mq span{font-size:clamp(34px,6vw,76px);font-weight:800;letter-spacing:-.04em;padding:0 .5em;white-space:nowrap;text-transform:uppercase}
+.mq span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px var(--bg)}
+.mq:hover div{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* services */
+.svc{margin-top:56px;border-top:1px solid var(--line)}
+.svc button{all:unset;display:block;width:100%;cursor:pointer;border-bottom:1px solid var(--line);padding:22px 0;box-sizing:border-box}
+.svc .h{display:flex;justify-content:space-between;align-items:baseline;gap:16px;font-size:clamp(28px,5vw,64px);font-weight:800;letter-spacing:-.04em;line-height:1;transition:transform .35s,color .3s}
+.svc button:hover .h,.svc button[aria-expanded=true] .h{transform:translateX(14px)}
+.svc .h small{font-size:15px;font-weight:400;letter-spacing:0;color:var(--mute);max-width:22em;text-align:right}
+.svc .d{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s}
+.svc button[aria-expanded=true] .d{grid-template-rows:1fr}
+.svc .d>div{overflow:hidden}
+.svc .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px;padding-top:24px;font-size:16px;cursor:default}
+.svc .cols h4{margin:0 0 6px;font-size:13px;color:var(--mute);font-weight:700}
+.svc q{font-size:20px;quotes:none}
+@media(max-width:700px){.svc .h small{display:none}}
+/* think */
+.steps{margin-top:50px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.sl{list-style:none;margin:0;padding:0}
+.sl button{all:unset;cursor:pointer;display:flex;gap:18px;width:100%;box-sizing:border-box;padding:14px 0;border-bottom:1px solid var(--line);font-size:clamp(20px,2.6vw,32px);font-weight:700;letter-spacing:-.03em;color:var(--mute);transition:.25s}
+.sl button span{font-size:15px;padding-top:.6em;width:2em}
+.sl button:hover,.sl button[aria-selected=true]{color:var(--fg);padding-left:12px}
+.sl button[aria-selected=true] span{color:var(--act)}
+.sd{position:sticky;top:100px;border:1.5px solid var(--fg);padding:clamp(22px,3vw,40px);min-height:260px}
+.sd p{font-size:clamp(22px,2.6vw,34px);line-height:1.15;letter-spacing:-.03em;font-weight:700;margin:0 0 16px}
+@media(max-width:800px){.steps{grid-template-columns:1fr}.sd{position:static}}
+/* work */
+.work{display:grid;gap:22px;margin-top:56px}
+.card{all:unset;cursor:pointer;display:grid;grid-template-columns:1.1fr 1fr;min-height:380px;border:1.5px solid var(--fg);transition:.35s;box-sizing:border-box;overflow:hidden}
+.card:nth-child(even){grid-template-columns:1fr 1.1fr}.card:nth-child(even) .cm{order:2}
+.card:hover,.card:focus-visible{background:var(--fg);color:var(--bg)}
+.card:hover .cp{background:var(--bg);color:var(--fg)}
+.cm{padding:clamp(20px,3vw,40px);display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.cm h3{font-size:clamp(30px,4.4vw,60px)}
+.tag{font-size:14px;color:var(--mute)}
+.card:hover .tag{color:var(--bg);opacity:.7}
+.cp{display:flex;align-items:center;justify-content:center;padding:28px;background:var(--fg);color:var(--bg);font-size:clamp(26px,3.6vw,50px);font-weight:700;line-height:1.25;text-align:center;transition:.4s}
+.card:hover .cp{transform:scale(1.04)}
+.cp span{display:block;transition:transform .5s}
+.card:hover .cp span{transform:translateY(-4px) rotate(-1deg)}
+@media(max-width:800px){.card,.card:nth-child(even){grid-template-columns:1fr}.card:nth-child(even) .cm{order:0}.cp{min-height:200px}}
+dialog{width:min(980px,100%);max-height:100dvh;margin:auto;border:0;padding:0;background:var(--bg);color:var(--fg);overflow:auto}
+dialog::backdrop{background:#000b}
+.cs{padding:clamp(22px,4vw,56px)}
+.cs .x{float:right;min-height:44px;cursor:pointer;background:none;border:1.5px solid var(--fg);color:var(--fg);border-radius:99px;padding:0 18px;font:inherit;font-weight:700}
+.cs h3{font-size:clamp(34px,6vw,76px);margin:12px 0 8px}
+.cs dl{margin:40px 0 0;display:grid;gap:0}
+.cs dl>div{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.cs dt{font-size:14px;color:var(--mute);font-weight:700}.cs dd{margin:0}
+.big{font-size:clamp(28px,4.4vw,56px);font-weight:700;line-height:1.15;letter-spacing:-.02em}
+.copy{white-space:pre-line;font-size:clamp(20px,2.4vw,28px);line-height:1.5;border-inline-start:4px solid var(--ac);padding-inline-start:20px}
+.spec{display:inline-block;border:1.5px dashed var(--act);color:var(--act);padding:2px 10px;font-size:13px;font-weight:700;border-radius:99px}
+@media(max-width:640px){.cs dl>div{grid-template-columns:1fr;gap:6px}}
+/* before after */
+.ba{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:18px;margin-top:50px}
+.bx{all:unset;cursor:pointer;position:relative;display:grid;min-height:210px;border:1.5px solid var(--fg);box-sizing:border-box;overflow:hidden}
+.bx>span{grid-area:1/1;padding:26px;display:flex;flex-direction:column;justify-content:center;gap:10px;font-size:clamp(20px,2.4vw,30px);font-weight:700;letter-spacing:-.02em;line-height:1.25;transition:transform .5s cubic-bezier(.7,0,.2,1),opacity .4s}
+.bx small{font-size:13px;letter-spacing:0;font-weight:700;color:var(--mute)}
+.bx .a{background:var(--fg);color:var(--bg);transform:translateY(100%)}
+.bx .a small{color:var(--bg);opacity:.6}
+.bx:hover .a,.bx.on .a,.bx:focus-visible .a{transform:none}
+.bx .b{text-decoration:line-through;text-decoration-color:var(--ac)}
+/* would you buy */
+.wyb{background:var(--fg);color:var(--bg);border:0}
+.wyb .lead{color:var(--bg);opacity:.7}
+.ad{margin:48px auto 0;max-width:560px;background:var(--bg);color:var(--fg);padding:30px;text-align:center}
+.ad .big{margin:18px 0 26px}
+.row2{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.ad .btn{cursor:pointer;background:none;color:var(--fg);font:inherit;font-weight:700}
+.why{display:none;text-align:left;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.why.show{display:block;animation:up2 .5s}
+@keyframes up2{from{opacity:0;transform:translateY(12px)}}
+.why li{margin:8px 0}
+/* about/process/why */
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,90px)}
+.about p{font-size:clamp(18px,1.8vw,22px);margin:0 0 18px}
+.langs{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.langs span{border:1.5px solid var(--fg);border-radius:99px;padding:4px 16px;font-weight:500}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.tl{list-style:none;padding:0;margin:56px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0}
+.tl li{padding:22px 18px 22px 0;border-top:3px solid var(--fg);position:relative}
+.tl li::before{content:"";position:absolute;top:-8px;left:0;width:13px;height:13px;background:var(--ac);border-radius:50%}
+.tl b{display:block;font-size:clamp(26px,3vw,40px);letter-spacing:-.04em;margin-top:8px}
+.tl small{color:var(--mute);font-size:14px}
+.why4{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;margin-top:50px;border-top:1px solid var(--line)}
+.why4>div{padding:30px 26px 30px 0;border-bottom:1px solid var(--line)}
+.why4 h3{font-size:clamp(26px,2.8vw,38px);margin-bottom:12px;line-height:1}
+.why4 p{margin:0;color:var(--mute)}
+/* final cta */
+.fin{text-align:center;padding:clamp(90px,16vw,220px) 0}
+.fin h2{font-size:clamp(40px,9.5vw,150px)}
+.fin .cta{justify-content:center;margin-top:44px}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}
+.ct h4{margin:0 0 8px;font-size:14px;color:var(--mute)}
+.ct a,.ct p{font-size:22px;font-weight:700;margin:0;letter-spacing:-.02em}
+.ph{color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:34px 0 40px;font-size:15px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.cur{position:fixed;left:0;top:0;width:14px;height:14px;border-radius:50%;background:var(--ac);pointer-events:none;z-index:99;mix-blend-mode:difference;transition:width .25s,height .25s,margin .25s;display:none}
+@media(hover:hover) and (pointer:fine){.cur{display:block}.cur.big{width:56px;height:56px;margin:-21px 0 0 -21px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.hero h1 span b{transform:none}}
+
+/* sticker style */
+.mk{background:var(--ac);color:var(--k);padding:0 .12em;border-radius:.18em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.btn{border-width:2.5px;box-shadow:4px 4px 0 var(--fg)}
+.btn:hover,.btn:focus-visible,.btn.fill:hover,.btn.fill:focus-visible{background:var(--ac);color:var(--k);border-color:var(--fg);transform:translate(2px,2px);box-shadow:2px 2px 0 var(--fg)}
+.links .btn{box-shadow:3px 3px 0 var(--fg)}
+.status{background:var(--ac);color:var(--k);border:2.5px solid var(--fg);border-radius:99px;padding:6px 16px;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--fg)}
+.float{background:var(--s2);color:var(--k);border:2.5px solid var(--fg);border-radius:22px;padding:14px 22px;transform:rotate(6deg);box-shadow:5px 5px 0 var(--fg)}
+.float .note{color:var(--k)}
+.mq{background:var(--ac);color:var(--k);border:3px solid var(--fg);transform:rotate(-1.6deg);width:calc(100% + 24px);margin:34px -12px}
+.mq span:nth-child(even){-webkit-text-stroke:1.5px var(--k)}
+.svc button[aria-expanded=true]{background:var(--ac);color:var(--k);border-radius:26px;padding:22px 22px;border-bottom-color:transparent}
+.svc button[aria-expanded=true] .h,.svc button[aria-expanded=true] .h small,.svc button[aria-expanded=true] h4{color:var(--k)}
+.sl button[aria-selected=true]{background:var(--ac);color:var(--k);border-radius:99px;padding-left:20px;border-bottom-color:transparent}
+.sl button[aria-selected=true] span{color:var(--k)}
+.sd{background:var(--s2);color:var(--k);border-radius:30px;border:2.5px solid var(--fg);box-shadow:8px 8px 0 var(--fg);transform:rotate(1.2deg)}
+.sd .note{color:var(--k)}
+.card{border-radius:30px;border-width:2.5px;box-shadow:8px 8px 0 var(--fg)}
+.card:hover,.card:focus-visible{background:var(--bg);color:var(--fg);transform:rotate(-1deg) translate(-2px,-2px)}
+.card:hover .tag{color:var(--mute);opacity:1}
+.card .cp{color:var(--k);border-inline-start:2.5px solid var(--fg)}
+.card:nth-child(1) .cp{background:var(--ac)}.card:nth-child(2) .cp{background:var(--s2)}.card:nth-child(3) .cp{background:var(--s3)}.card:nth-child(4) .cp{background:var(--s4)}
+.cp span{transform:rotate(-2deg)}
+.spec{background:var(--ac);color:var(--k);border:2px solid var(--fg);transform:rotate(-2deg)}
+dialog{border-radius:30px;border:3px solid var(--fg)}
+.bx{border-radius:26px;border-width:2.5px;box-shadow:6px 6px 0 var(--fg)}
+.bx:nth-child(odd){transform:rotate(-.8deg)}.bx:nth-child(even){transform:rotate(.8deg)}
+.ad{background:var(--ac);color:var(--k);border-radius:34px;transform:rotate(-1.4deg);border:3px solid var(--bg)}
+.ad .btn{color:var(--k);border-color:var(--k);box-shadow:4px 4px 0 var(--k)}
+.ad .btn.fill{background:var(--k);color:#eadfc3}
+.ad .btn:hover{background:var(--s3);color:var(--k)}
+.ad .why{border-top-color:#143d2c55}
+.langs span{border:2.5px solid var(--fg);color:var(--k);padding:5px 18px;font-weight:700}
+.langs span:nth-child(1){background:var(--ac);transform:rotate(-3deg)}.langs span:nth-child(2){background:var(--s2);transform:rotate(2deg)}.langs span:nth-child(3){background:var(--s3);transform:rotate(-2deg)}.langs span:nth-child(4){background:var(--s4);transform:rotate(3deg)}
+.tl li::before{width:20px;height:20px;top:-12px;border:2.5px solid var(--fg)}
+.why4{gap:20px;border:0}
+.why4>div{border:2.5px solid var(--fg);border-radius:28px;padding:28px;box-shadow:6px 6px 0 var(--fg);color:var(--k)}
+.why4>div p{color:var(--k);opacity:.8}
+.why4>div:nth-child(1){background:var(--ac);transform:rotate(-1.2deg)}.why4>div:nth-child(2){background:var(--s2);transform:rotate(1deg)}.why4>div:nth-child(3){background:var(--s3);transform:rotate(-.8deg)}.why4>div:nth-child(4){background:var(--s4);transform:rotate(1.3deg)}
+
+
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),340px));gap:18px;margin-top:28px}
+.dc{display:flex;flex-direction:column;justify-content:space-between;gap:22px;min-height:140px;padding:22px;border:2.5px solid var(--fg);border-radius:24px;background:var(--ac);color:var(--k);text-decoration:none;box-shadow:5px 5px 0 var(--fg);font-weight:700;font-size:20px;line-height:1.2;transition:transform .25s}
+.dc:nth-child(2n){background:var(--s2)}.dc:nth-child(3n){background:var(--s4)}
+a.dc:hover{transform:rotate(-1.2deg) translate(-2px,-2px)}
+.dc small{font-size:14px;font-weight:600;opacity:.75}
+.dc.em{background:none;border-style:dashed;box-shadow:none;color:var(--mute)}
+.nm{margin:0 0 14px;font-size:clamp(24px,3.4vw,44px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.dc .btn{align-self:flex-start;font-size:16px}
+.dc .btn.fill:hover,.dc .btn.fill:focus-visible{background:var(--s3);color:var(--k);border-color:var(--fg)}
+.dc .btn.off{opacity:.55;border-style:dashed;box-shadow:none;pointer-events:none}
+.cbs{display:flex;flex-wrap:wrap;gap:20px;margin-top:40px}
+.cb{min-height:72px;padding:0 34px;font-size:clamp(20px,2.4vw,28px);color:var(--k);border-width:3px;box-shadow:6px 6px 0 var(--fg)}
+.cb:nth-child(1){background:var(--ac);transform:rotate(-1.5deg)}.cb:nth-child(2){background:var(--s2);transform:rotate(1deg)}.cb:nth-child(3){background:var(--s4);transform:rotate(-.8deg)}
+.cb.off{border-style:dashed}
+@media(max-width:560px){.cb{width:100%;justify-content:center}}
+.em2{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px;padding:18px 22px;border:2.5px solid var(--fg);border-radius:26px;background:var(--s3);color:var(--k);box-shadow:6px 6px 0 var(--fg)}
+.em2[hidden]{display:none}.em2 b{font-size:clamp(17px,2.2vw,24px);word-break:break-all;margin-right:8px}.em2 .btn{color:var(--k);box-shadow:none;background:var(--bg)}.em2 .btn.fill{background:var(--k);color:#fff}
+</style>
+</head>
+<body>
+<div class="cur" aria-hidden="true"></div>
+<header id="hd"><div class="wrap"><nav>
+<a class="logo" href="#top" aria-label="Ahmed Hamdoun, home">Ahmed Hamdoun</a>
+<button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+<div class="links"><a href="#top">Home</a><a href="#readdocs">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a><a class="btn fill" href="#contact">Let's talk →</a></div>
+</nav></div></header>
+
+<main id="top">
+<div class="hero wrap" style="position:relative">
+<div class="status"><i class="dot"></i>Available for freelance projects</div>
+<p class="nm">Ahmed Hamdoun</p>
+<h1><span><b>I turn words</b></span><span><b>into reasons</b></span><span><b>to <em class="mk" style="font-style:normal">buy.</em></b></span></h1>
+<div class="float"><span class="note">hooks first.</span><br><span class="ar" style="font-weight:700">ركبتك توجعك؟</span></div>
+<div class="row"><p class="lead" style="margin:0">E-commerce copywriter helping Tunisian brands get more attention, clicks and customers.</p>
+<div class="cta"><a class="btn fill" href="#readdocs">See my work</a><a class="btn" href="#contact">Let's work together</a></div></div>
+</div>
+
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<section><div class="wrap">
+<h2 class="rv">Your product isn't boring.<br>Your copy might be.</h2>
+<div class="rv" style="margin-top:44px;display:grid;gap:18px">
+<p class="lead" style="margin:0">Most e-commerce brands don't have a bad product. They have a messaging problem.</p>
+<p style="font-size:clamp(24px,3.4vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin:0;max-width:20em">Weak hook. Generic benefits. No difference from the next store. No reason to act now.</p>
+<p class="lead" style="margin:0">My job: turn the product into something people actually want.</p></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="rv">What I write.</h2>
+<p class="lead rv" style="margin-top:20px">Tap a service. See the problem it solves and the copy it produces.</p>
+<div class="svc" id="svc"></div>
+</div></section>
+
+<section><div class="wrap">
+<h2 class="rv">Good copy isn't about sounding smart.</h2>
+<p class="lead rv" style="margin-top:20px">It's about making the customer feel understood. Here's the path every product goes through.</p>
+<div class="steps"><ul class="sl" id="sl" role="tablist"></ul>
+<div class="sd" aria-live="polite"><p id="sdt"></p><span class="note" id="sdn"></span></div></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<h2 class="rv" id="readdocs">Read the full docs.</h2>
+<div class="docs" id="docs"></div>
+<h2 class="rv" style="font-size:clamp(26px,3.6vw,48px);margin-top:64px">Words I've put to work.</h2>
+<p class="lead rv" style="margin-top:20px">Four portfolio concepts for products Tunisian stores actually sell. <span class="spec">Spec Work / Portfolio Concept</span> No client results claimed. Just the thinking and the copy.</p>
+<div class="work" id="wk"></div>
+</div></section>
+
+<section><div class="wrap">
+<h2 class="rv">From "meh" to "I need this."</h2>
+<p class="lead rv" style="margin-top:20px">Hover (or tap) to flip each line.</p>
+<div class="ba" id="ba"></div>
+</div></section>
+
+<section class="wyb"><div class="wrap">
+<h2 class="rv" style="text-align:center">Would you buy this?</h2>
+<p class="lead rv" style="text-align:center;margin:20px auto 0">Look at the ad. Decide in two seconds. Then see what the copy is doing.</p>
+<div class="ad rv">
+<span class="spec">Spec concept: acne patch</span>
+<div class="big ar" lang="ar">الحبة ظهرت؟<br>ما تعصرهاش! ❌</div>
+<div class="row2"><button class="btn" data-w="y">Yes, I'd tap</button><button class="btn" data-w="n">Not sure</button><button class="btn fill" data-w="s">Show me why</button></div>
+<div class="why" id="why"><b>Why it stops the scroll</b>
+<ul><li><b>Instant recognition.</b> Anyone with a pimple feels caught.</li><li><b>Familiar language.</b> Darija, the way people actually talk. No translated feel.</li><li><b>Curiosity.</b> "Why not?" pulls you into the next line.</li><li><b>Clear action to avoid.</b> It names the habit and gives the product a job to replace it.</li></ul></div>
+</div></div></section>
+
+<section id="about"><div class="wrap about">
+<div><h2 class="rv">Who am I?</h2><span class="note" style="margin-top:14px">Tunisia-based. Tunisia-focused.</span></div>
+<div class="rv">
+<p>I'm Ahmed Hamdoun, a Tunisian e-commerce copywriter obsessed with one question:</p>
+<p style="font-size:clamp(26px,3.4vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.05">"What would make someone stop scrolling and actually care?"</p>
+<p>I study products, pain points, desires, objections and the psychology behind buying decisions. I don't want copy that just sounds good. I want copy that gives people a reason to act.</p>
+<p>I'm early in my freelance career, which means your product gets my full obsession, not a template.</p>
+<div class="langs"><span>Tunisian Darija</span><span>Arabic</span><span>Français</span><span>English</span></div>
+<p style="margin-top:20px;color:var(--mute)">Darija for ads is written natively, not translated from generic MSA or French copy.</p>
+</div></div></section>
+
+<section><div class="wrap">
+<h2 class="rv">How a product becomes an ad.</h2>
+<ol class="tl rv" id="tl"></ol>
+</div></section>
+
+<section><div class="wrap">
+<h2 class="rv">Why work with me.</h2>
+<div class="why4 rv">
+<div><h3>I think like a customer</h3><p>I don't start with the product. I start with the person buying it.</p></div>
+<div><h3>I write for attention</h3><p>Nobody can buy what they don't stop to read.</p></div>
+<div><h3>I understand Tunisian buyers</h3><p>Natural language, cultural context and real objections matter.</p></div>
+<div><h3>I write to convert</h3><p>The goal isn't beautiful copy. The goal is action.</p></div>
+</div></div></section>
+
+<section class="fin"><div class="wrap">
+<h2 class="rv">Got a product people should care about?<br><span class="mk">Let's give them a reason.</span></h2>
+<div class="cta"><a class="btn fill" href="#contact">Let's work together →</a><a class="btn" href="#readdocs">View my work</a></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2 class="rv">Let's talk.</h2>
+<p class="lead rv" style="margin-top:20px">Tell me about your product. I'll reply with how I'd make people care. <b>Ahmed Hamdoun</b> · E-commerce Copywriter · Tunisia</p>
+<div class="cbs rv">
+<a class="btn cb" id="c-ig" href="#contact">Instagram ↗</a>
+<a class="btn cb" id="c-wa" href="#contact">WhatsApp ↗</a>
+<a class="btn cb" id="c-em" href="#contact">Send an email ↗</a>
+</div>
+<div class="em2" id="em2" hidden><b id="ea"></b><button class="btn" id="cp" type="button">Copy email</button><a class="btn fill" id="gm" target="_blank" rel="noopener">Open Gmail ↗</a><a class="btn" id="ml">Mail app</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>Ahmed Hamdoun © 2026 · E-commerce Copywriter</span><span>Helping Tunisian brands sell more with words.</span></div></footer>
+
+<dialog id="dlg" aria-label="Case study"><div class="cs" id="cs"></div></dialog>
+
+<script>
+const $=s=>document.querySelector(s),h=(t,c,a={})=>{const e=document.createElement(t);if(c)e.className=c;Object.assign(e,a);return e};
+// ▼ ADD YOUR CONTACT LINKS HERE ▼
+const CONTACT={
+ instagram:"https://www.instagram.com/ahmed.ecom_copy/", // e.g. "https://instagram.com/yourname"
+ whatsapp:"21658180847",  // digits only with country code, e.g. "21650123456"
+ email:"ahmedhamdoun039@gmail.com"      // e.g. "you@example.com"
+};
+(()=>{const m={"c-ig":CONTACT.instagram&&CONTACT.instagram,"c-wa":CONTACT.whatsapp&&"https://wa.me/"+CONTACT.whatsapp.replace(/\D/g,"")+"?text="+encodeURIComponent("Hi Ahmed, I saw your portfolio and I'd like to talk about my product."),"c-em":CONTACT.email&&"mailto:"+CONTACT.email+"?subject="+encodeURIComponent("Copywriting project")};
+for(const id in m){const a=document.getElementById(id);if(m[id]){if(id==="c-em"){a.href="#contact";a.addEventListener("click",e=>{e.preventDefault();$("#em2").hidden=!$("#em2").hidden})}else{a.href=m[id];a.target="_blank";a.rel="noopener"}}else{a.classList.add("off");a.title="Add your link in the code (CONTACT)";a.addEventListener("click",e=>e.preventDefault())}}})();
+if(CONTACT.email){const E=CONTACT.email,q=encodeURIComponent("Copywriting project");$("#ea").textContent=E;$("#gm").href="https://mail.google.com/mail/?view=cm&to="+E+"&su="+q;$("#ml").href="mailto:"+E+"?subject="+q;$("#cp").onclick=async e=>{try{await navigator.clipboard.writeText(E);e.target.textContent="Copied ✓"}catch(x){const r=document.createRange();r.selectNodeContents($("#ea"));getSelection().removeAllRanges();getSelection().addRange(r);e.target.textContent="Now press copy"}}}
+// marquee
+const words=["Hooks","Meta Ads","UGC Scripts","Product Pages","VSL","Offers","CTAs","Direct Response","Conversion","Darija Copy","Creative Strategy"];
+$("#mq").innerHTML=[...words,...words].map(w=>`<span>${w}</span>`).join("")+[...words,...words].map(w=>`<span>${w}</span>`).join("");
+$("#mq").innerHTML=($("#mq").innerHTML.slice(0,$("#mq").innerHTML.length));
+// services
+const S=[
+["Meta ad copy","Hooks, primary text, headlines and CTAs that stop the scroll.","Ads that get scrolled past because they describe instead of provoke.","ركبتك توجعك كي تطلع الدروج؟"],
+["UGC / ad scripts","Scripts built on attention, problem, desire, action.","Creators who read a spec sheet to camera.","كل صباح نفس الحكاية… أول خطوة وكعبي يصيح."],
+["Product page copy","Features turned into reasons to buy.","Visitors who scroll, nod, and leave without buying.","موش بس دعامة. هي الفرق بين «نقعد» و«نخرج مع عايلتي»."],
+["VSL copy","Long-form scripts matched to how aware the customer is.","Cold traffic that needs a story before an offer.","تتخيل تفيق صباح وما تخممش في خطوتك الأولى؟"],
+["Hooks & angles","Many angles, so we find the one that's impossible to ignore.","One angle, tested to death, with falling CTR.","Same product. Five openings. Five different customers."],
+["Offer & conversion copy","Value, objections, difference, action.","Good traffic, low conversion, no reason to order today.","الدفع عند الاستلام. جرب وانت مرتاح."]];
+const sv=$("#svc");S.forEach(([t,s,p,e])=>{const b=h("button","",{type:"button"});b.setAttribute("aria-expanded","false");b.innerHTML=`<div class="h"><span>${t}</span><small>${s}</small></div><div class="d"><div><div class="cols"><div><h4>What I do</h4>${s}</div><div><h4>Problem it solves</h4>${p}</div><div><h4>Example</h4><q class="${/[\u0600-\u06FF]/.test(e)?'ar':''}">${e}</q></div></div></div></div>`;b.onclick=()=>{const o=b.getAttribute("aria-expanded")==="true";sv.querySelectorAll("button").forEach(x=>x.setAttribute("aria-expanded","false"));b.setAttribute("aria-expanded",!o)};sv.append(b)});
+// steps
+const T=[["Understand the customer","Who is scrolling? Age, worry, language, what they do before bed.","Real people, not personas."],["Find the pain","The exact moment it hurts. Stairs. Prayer. First step out of bed.","Specific beats general."],["Identify the desire","What they want their day to feel like once the pain isn't the main character.","Desire sells. Features explain."],["Build the angle","One clear way into the product that nobody else is using.","The angle is the ad."],["Write the hook","The first line decides if the rest exists.","Make them stop."],["Create the offer","Value, risk-reversal, reason to act today.","Make yes easy."],["Make the action obvious","One next step. Zero doubt about what happens.","Tell them what to do."]];
+const sl=$("#sl");T.forEach((t,i)=>{const li=h("li");const b=h("button","",{type:"button"});b.setAttribute("role","tab");b.setAttribute("aria-selected",i==0);b.innerHTML=`<span>0${i+1}</span>${t[0]}`;b.onclick=b.onmouseenter=()=>{sl.querySelectorAll("button").forEach(x=>x.setAttribute("aria-selected","false"));b.setAttribute("aria-selected","true");$("#sdt").textContent=t[1];$("#sdn").textContent=t[2]};li.append(b);sl.append(li)});
+$("#sdt").textContent=T[0][1];$("#sdn").textContent=T[0][2];
+// work
+
+// GOOGLE DOCS: paste each link between the quotes in u:"" (make sure sharing is "Anyone with the link can view")
+const DOCS=[{t:"ahmed_hamdoun1",u:"https://docs.google.com/document/d/1h5igACARNb2Q3XjM0w3CoAoFK--Y-Ufw9jsynFuST9s/edit?usp=sharing"}];
+$("#docs").innerHTML=DOCS.map(d=>d.u?`<a class="dc" href="${d.u}" target="_blank" rel="noopener noreferrer"><span>Read the full doc ↗</span><small>📄 ${d.t}</small></a>`:`<div class="dc em"><span>${d.t}</span><span>Link coming soon</span></div>`).join("");
+const W=[
+{t:"Knee support",tag:"Compression knee brace · Adults 45–65",h:"ركبتك توجعك كي تطلع الدروج؟",prod:"Compression knee support. Spec concept for the Tunisian market.",aud:"Adults 45–65 living with everyday knee discomfort who still want to keep up with family.",prob:"Pain on stairs, after standing long, during prayer. Gels and sessions that only feel temporary. Fear of surgery.",des:"Move through the day without planning around the knee. Stay active with the grandchildren.",ang:"The pain isn't only when you walk. It follows you to the places that matter.",weak:"Compression knee support for better stability.",copy:"ركبتك توجعك كي تطلع الدروج؟\nكي تقعد؟ حتى وقت الصلاة؟\n\nموش لازم تعيش وانت تحسب حساب كل خطوة.\nدعامة الركبة تعاونك تحس بثبات وراحة أكثر في حركتك اليومية، باش تمشي مع عايلتك بأريحية.\n\nأطلب توا. الدفع عند الاستلام.",why:["Names three real moments, not 'pain'.","Prayer shows cultural understanding.","No cure claims. Only comfort and stability.","One clear action."]},
+{t:"Plantar fasciitis",tag:"Arch support insoles · Foot pain",h:"أول خطوة من الفراش… وكعبك يصيح؟",prod:"Arch-support insoles for heel pain. Spec concept.",aud:"People on their feet all day, or anyone whose first morning steps hurt.",prob:"Heel pain at first steps, pain after walking, discomfort that makes every errand harder.",des:"Start the day without bracing for the first step.",ang:"Morning is when the heel tells on you.",weak:"Ergonomic insoles with arch support.",copy:"HOOK\nأول خطوة من الفراش… وكعبك يصيح؟\n\nPROBLEM\nتفيق، تحط رجلك، وتبدا نهارك بوجيعة.\n\nAGITATION\nوكل مشوار بعد يزيد يتقل: السوق، الخدمة، حتى الدار.\n\nMECHANISM\nدعم القوس يعاون يوزّع الضغط على الرجل بطريقة أريح.\n\nCTA\nجرب النعل وانت مرتاح. الدفع عند الاستلام.",why:["Hook for problem-aware buyers.","Awareness ladder: problem, agitation, mechanism, action.","Mechanism explains without clinical promises.","Language sounds like a neighbor, not a pharmacy leaflet."]},
+{t:"Anti-aging cream",tag:"Face cream · Visible wrinkles",h:"المراية ما تكذبش. بصّ في التجاعيد.",prod:"Face cream for visible signs of aging. Spec concept.",aud:"Women 35+ who notice fine lines and feel tired of generic 'anti-age' promises.",prob:"Fine lines and dull skin. Creams that all say the same thing.",des:"Look in the mirror and feel like themselves on a good day.",ang:"Not 'erase years'. Make the mirror moment feel better.",weak:"Anti-wrinkle cream with hyaluronic acid.",copy:"المراية ما تكذبش… بس ما تخليهاش تحكم عليك.\n\nكريم يهتم بملمس بشرتك وترطيبها كل يوم، باش تبان أنضر وأكثر راحة.\n\nمش وعود كبيرة. روتين صغير تحبو.\n\nأطلبي كريمك توا.",why:["Mirror is a universal, emotional trigger.","Humble claims build trust.","Differentiates by honesty vs 'miracle' creams.","Feminine address for the target buyer."]},
+{t:"Acne patch",tag:"Hydrocolloid patch · Visual + verbal hook",h:"الحبة ظهرت؟ ما تعصرهاش! ❌",prod:"Hydrocolloid pimple patch. Spec concept.",aud:"Teens and young adults who squeeze pimples by reflex.",prob:"Squeezing, marks, irritation, and a pimple that gets angrier.",des:"Skin that looks calm before the event, the photo, the date.",ang:"Stop the habit. Replace it with one sticker.",weak:"Hydrocolloid acne patches for blemish care.",copy:"الحبة ظهرت؟ ما تعصرهاش! ❌\n\nكل مرة تعصر، تزيد تغضب وتخلّي أثر.\nحط باتش عليها وخليها تهدا.\n\nنضيف. سهل. من غير ما تلمسها.\nأطلب توا.",why:["Imperative plus emoji = instant visual stop.","Names the exact reflex.","Offers a replacement action.","Short, native, scannable."]}];
+const wk=$("#wk");W.forEach((w,i)=>{const b=h("button","card rv",{type:"button"});b.innerHTML=`<div class="cm"><div><div class="tag">0${i+1} · ${w.tag}</div></div><div><h3>${w.t}</h3><p class="tag" style="margin:10px 0 0">Spec Work / Portfolio Concept → open case</p></div></div><div class="cp ar" lang="ar"><span>${w.h}</span></div>`;b.onclick=()=>open(w);wk.append(b)});
+function open(w){const D=(a,b,c="")=>`<div><dt>${a}</dt><dd class="${c}">${b}</dd></div>`;$("#cs").innerHTML=`<button class="x" onclick="dlg.close()">Close ✕</button><span class="spec">Spec Work / Portfolio Concept</span><h3>${w.t}</h3><dl>${D("1. Product",w.prod)}${D("2. Audience",w.aud)}${D("3. Problem",w.prob)}${D("4. Desire",w.des)}${D("5. Big angle",w.ang,"big")}${D("6. Hook",w.h,"big ar")}${D("7. Ad copy",w.copy.replace(/</g,"&lt;"),"copy ar")}${D("8. Why it works","<ul>"+w.why.map(x=>`<li>${x}</li>`).join("")+"</ul>")}${D("9. CTA",`<a class="btn fill" href="#contact" onclick="dlg.close()">Want this for your product →</a>`)}</dl>`;dlg.showModal()}
+const dlg=$("#dlg");dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+// before/after
+const B=[["High quality knee support for pain relief.","ركبتك توجعك حتى كي تقعد؟\nالمشكل موش ديما في المشي."],["Premium anti-aging face cream.","شكون قالك لازم تستنى «العمر» باش تهتم ببشرتك؟"],["Orthopedic insoles. Comfortable all day.","نهارك يبدا بوجيعة في كعبك؟ خلّي أول خطوة أخف."],["Effective pimple patches. Order now.","الحبة ظهرت؟ ما تعصرهاش! ❌"]];
+$("#ba").innerHTML=B.map(([a,b])=>`<button class="bx" type="button"><span class="b"><small>BEFORE</small>${a}</span><span class="a ar" lang="ar" style="direction:rtl"><small style="direction:ltr;text-align:left">AFTER</small>${b.replace(/\n/g,"<br>")}</span></button>`).join("");
+document.querySelectorAll(".bx").forEach(b=>b.onclick=()=>b.classList.toggle("on"));
+// would you buy
+document.querySelectorAll("[data-w]").forEach(b=>b.onclick=()=>$("#why").classList.add("show"));
+// process
+$("#tl").innerHTML=[["Research","Product, market, reviews"],["Customer","Who, where, how they talk"],["Angle","One way in"],["Hook","The first line"],["Copy","Ads, scripts, pages"],["Test","Variations, not guesses"],["Optimize","Keep what pulls"]].map(([a,b],i)=>`<li><small>0${i+1}</small><b>${a}</b><small>${b}</small></li>`).join("");
+// ui
+const hd=$("#hd");addEventListener("scroll",()=>hd.classList.toggle("st",scrollY>30),{passive:true});
+const bg=$(".burger");bg.onclick=()=>{const o=hd.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+hd.querySelectorAll(".links a").forEach(a=>a.onclick=()=>{hd.classList.remove("open");bg.setAttribute("aria-expanded","false")});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+const cur=$(".cur");addEventListener("pointermove",e=>{cur.style.transform=`translate(${e.clientX-7}px,${e.clientY-7}px)`;cur.classList.toggle("big",!!e.target.closest("a,button"))},{passive:true});
+
+
+// Inspect mode: open the page with #code at the end of the link
+if(location.hash==="#code"){
+const st=h("style");st.textContent="[data-ins]{outline:2px dashed #ff2d95!important;outline-offset:2px}";document.head.append(st);
+const pn=h("div");pn.style.cssText="position:fixed;left:0;right:0;bottom:0;height:42vh;z-index:200;background:#0f0f14;color:#e8e8f0;font:13px/1.5 ui-monospace,Menlo,monospace;overflow:auto;padding:12px 16px calc(env(safe-area-inset-bottom,0px) + 12px);border-top:3px solid #ffd23f";
+pn.innerHTML='<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:8px"><b style="color:#ffd23f">Inspect mode</b><button id="ti" style="min-height:40px;padding:0 16px;border-radius:99px;border:0;background:#ffd23f;color:#111;font-weight:700;cursor:pointer">ON</button><span style="opacity:.7">Click anything to see its code. Switch OFF to use the page normally.</span></div><pre id="out" style="margin:0;white-space:pre-wrap;word-break:break-word">Click an element…</pre>';
+document.body.append(pn);document.body.style.paddingBottom="42vh";
+let on=true,hv=null;const ti=pn.querySelector("#ti"),out=pn.querySelector("#out");
+ti.onclick=()=>{on=!on;ti.textContent=on?"ON":"OFF";if(hv){hv.removeAttribute("data-ins");hv=null}};
+document.addEventListener("mouseover",e=>{if(!on||pn.contains(e.target))return;if(hv)hv.removeAttribute("data-ins");hv=e.target;hv.setAttribute("data-ins","")},true);
+document.addEventListener("click",e=>{if(!on||pn.contains(e.target))return;e.preventDefault();e.stopPropagation();const el=e.target;el.removeAttribute("data-ins");let html=el.outerHTML;if(html.length>700)html=html.slice(0,700)+"\n… (trimmed)";const rules=[];
+const walk=(rs,pre)=>{for(const r of rs){if(r.selectorText){try{if(el.matches(r.selectorText))rules.push(pre+r.cssText)}catch(x){}}else if(r.cssRules)walk(r.cssRules,r.conditionText?"@media "+r.conditionText+" → ":pre)}};
+for(const ss of document.styleSheets){try{walk(ss.cssRules,"")}catch(x){}}
+out.textContent="── HTML ──\n"+html+"\n\n── CSS that styles it ──\n"+(rules.slice(0,30).join("\n")||"(none)")},true);
+}
+</script>
+</body>
+</html>
