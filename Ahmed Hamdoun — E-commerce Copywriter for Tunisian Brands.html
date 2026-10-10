@@ -7,6 +7,7 @@
 <meta name="description" content="Ahmed Hamdoun is a freelance e-commerce copywriter helping Tunisian brands sell more with words: Meta ads, UGC scripts, product pages and VSLs in Darija, Arabic, French and English.">
 <meta property="og:title" content="Ahmed Hamdoun — I turn words into reasons to buy">
 <meta property="og:description" content="E-commerce copywriter for Tunisian brands. Hooks, Meta ads, scripts, offers.">
+<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Cairo:wght@500;700&family=Caveat:wght@600&display=swap">
 <style>
 :root{--bg:#fbf6e1;--fg:#1b1b3a;--mute:#585878;--line:#1b1b3a3d;--ac:#ffd23f;--act:#1b1b3a;--s2:#b8c4ff;--s3:#ffffff;--s4:#ffe58a;--k:#1b1b3a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -220,6 +221,22 @@ a.dc:hover{transform:rotate(-1.2deg) translate(-2px,-2px)}
 @media(max-width:560px){.cb{width:100%;justify-content:center}}
 .em2{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px;padding:18px 22px;border:2.5px solid var(--fg);border-radius:26px;background:var(--s3);color:var(--k);box-shadow:6px 6px 0 var(--fg)}
 .em2[hidden]{display:none}.em2 b{font-size:clamp(17px,2.2vw,24px);word-break:break-all;margin-right:8px}.em2 .btn{color:var(--k);box-shadow:none;background:var(--bg)}.em2 .btn.fill{background:var(--k);color:#fff}
+.status{align-self:flex-start}
+header.st{background:none;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom:0}
+header::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.st::before{opacity:1}
+@media(max-width:760px){header:not(.open) .links{visibility:hidden;transition:transform .5s cubic-bezier(.7,0,.2,1),visibility 0s .5s}header.open .links{visibility:visible;transition:transform .5s cubic-bezier(.7,0,.2,1)}}
+.pic{position:relative;margin:28px 0 0;width:min(100%,320px);aspect-ratio:4/5;border:2.5px solid var(--fg);border-radius:24px;background:var(--ac);box-shadow:6px 6px 0 var(--fg);overflow:hidden;display:grid;place-items:center}
+.pic span{font-weight:800;font-size:72px;letter-spacing:-.05em}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+img,video{max-width:100%}
+.fb{max-width:460px;border:1.5px solid var(--line);background:#fff;border-radius:12px;overflow:hidden;font-size:15px}
+.fbh{display:flex;gap:10px;align-items:center;padding:12px 14px}.fbh i{width:36px;height:36px;border-radius:50%;background:var(--ac);display:block}.fbh small{display:block;color:var(--mute)}
+.fb .copy{white-space:pre-wrap;padding:4px 14px 14px;font-size:18px;line-height:1.8;text-align:right;background:none}
+.fbi{background:var(--s2);height:170px;display:grid;place-items:center;font-weight:700}
+.fbc{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#f1efe4}.fbc b{background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:6px}
+details.en summary{cursor:pointer;font-weight:700;margin-top:14px}details.en p{color:var(--mute);margin:8px 0 0}
+.faq{margin-top:56px;max-width:760px}.faq details{border-top:1px solid var(--line);padding:16px 0}.faq summary{cursor:pointer;font-weight:700;font-size:20px}.faq p{color:var(--mute);margin:10px 0 0}
 </style>
 </head>
 <body>
@@ -235,7 +252,7 @@ a.dc:hover{transform:rotate(-1.2deg) translate(-2px,-2px)}
 <div class="status"><i class="dot"></i>Available for freelance projects</div>
 <p class="nm">Ahmed Hamdoun</p>
 <h1><span><b>I turn words</b></span><span><b>into reasons</b></span><span><b>to <em class="mk" style="font-style:normal">buy.</em></b></span></h1>
-<div class="float"><span class="note">hooks first.</span><br><span class="ar" style="font-weight:700">ركبتك توجعك؟</span></div>
+<div class="float"><span class="note">hooks first.</span><br><span class="ar" style="font-weight:700">ركبتك توجع فيك ؟</span></div>
 <div class="row"><p class="lead" style="margin:0">E-commerce copywriter helping Tunisian brands get more attention, clicks and customers.</p>
 <div class="cta"><a class="btn fill" href="#readdocs">See my work</a><a class="btn" href="#contact">Let's work together</a></div></div>
 </div>
@@ -282,18 +299,19 @@ a.dc:hover{transform:rotate(-1.2deg) translate(-2px,-2px)}
 <p class="lead rv" style="text-align:center;margin:20px auto 0">Look at the ad. Decide in two seconds. Then see what the copy is doing.</p>
 <div class="ad rv">
 <span class="spec">Spec concept: acne patch</span>
-<div class="big ar" lang="ar">الحبة ظهرت؟<br>ما تعصرهاش! ❌</div>
+<div class="big ar" lang="ar">الحب طلعلك في وجهك؟<br>ما تبربشوش! ❌</div>
 <div class="row2"><button class="btn" data-w="y">Yes, I'd tap</button><button class="btn" data-w="n">Not sure</button><button class="btn fill" data-w="s">Show me why</button></div>
 <div class="why" id="why"><b>Why it stops the scroll</b>
 <ul><li><b>Instant recognition.</b> Anyone with a pimple feels caught.</li><li><b>Familiar language.</b> Darija, the way people actually talk. No translated feel.</li><li><b>Curiosity.</b> "Why not?" pulls you into the next line.</li><li><b>Clear action to avoid.</b> It names the habit and gives the product a job to replace it.</li></ul></div>
 </div></div></section>
 
 <section id="about"><div class="wrap about">
-<div><h2 class="rv">Who am I?</h2><span class="note" style="margin-top:14px">Tunisia-based. Tunisia-focused.</span></div>
+<div><h2 class="rv">Who am I?</h2><span class="note" style="margin-top:14px">Tunisia-based. Tunisia-focused.</span>
+<figure class="pic rv"><span aria-hidden="true">AH</span><img src="ahmed.jpg" alt="Portrait of Ahmed Hamdoun" loading="lazy" decoding="async" onerror="this.remove()"></figure></div>
 <div class="rv">
 <p>I'm Ahmed Hamdoun, a Tunisian e-commerce copywriter obsessed with one question:</p>
 <p style="font-size:clamp(26px,3.4vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.05">"What would make someone stop scrolling and actually care?"</p>
-<p>I study products, pain points, desires, objections and the psychology behind buying decisions. I don't want copy that just sounds good. I want copy that gives people a reason to act.</p>
+<p>I study products, pain points, desires, objections and the psychology behind buying decisions. I don't want copy that just sounds good. I want copy that gives people a reason to buy.</p>
 <p>I'm early in my freelance career, which means your product gets my full obsession, not a template.</p>
 <div class="langs"><span>Tunisian Darija</span><span>Arabic</span><span>Français</span><span>English</span></div>
 <p style="margin-top:20px;color:var(--mute)">Darija for ads is written natively, not translated from generic MSA or French copy.</p>
@@ -320,13 +338,9 @@ a.dc:hover{transform:rotate(-1.2deg) translate(-2px,-2px)}
 
 <section id="contact"><div class="wrap">
 <h2 class="rv">Let's talk.</h2>
-<p class="lead rv" style="margin-top:20px">Tell me about your product. I'll reply with how I'd make people care. <b>Ahmed Hamdoun</b> · E-commerce Copywriter · Tunisia</p>
-<div class="cbs rv">
-<a class="btn cb" id="c-ig" href="#contact">Instagram ↗</a>
-<a class="btn cb" id="c-wa" href="#contact">WhatsApp ↗</a>
-<a class="btn cb" id="c-em" href="#contact">Send an email ↗</a>
-</div>
-<div class="em2" id="em2" hidden><b id="ea"></b><button class="btn" id="cp" type="button">Copy email</button><a class="btn fill" id="gm" target="_blank" rel="noopener">Open Gmail ↗</a><a class="btn" id="ml">Mail app</a></div>
+<p class="lead rv" style="margin-top:20px">Send me your product link on WhatsApp and I'll reply with 3 free hook ideas within 24 hours. <b>Ahmed Hamdoun</b> · E-commerce Copywriter · Tunisia</p>
+<div class="cbs rv"><a class="btn fill cb" id="c-wa" href="#contact">WhatsApp ↗</a><a class="btn cb" id="c-ig" href="#contact">Instagram ↗</a><a class="btn cb" id="c-em" href="#contact">Send an email ↗</a></div>
+<div class="faq rv"><details><summary>How fast can you deliver?</summary><p>Tell me your deadline when you message. I confirm what's realistic before we start.</p></details><details><summary>What do you need from me?</summary><p>Your product link or photos, price, who buys it, and what you've already tried.</p></details><details><summary>Do you do revisions?</summary><p>Yes. We refine the copy with your feedback. The exact number of rounds is agreed upfront.</p></details><details><summary>How much does it cost?</summary><p>It depends on the scope. Message me what you need and I'll send a clear quote before any work starts.</p></details></div>
 </div></section>
 </main>
 
@@ -336,47 +350,43 @@ a.dc:hover{transform:rotate(-1.2deg) translate(-2px,-2px)}
 
 <script>
 const $=s=>document.querySelector(s),h=(t,c,a={})=>{const e=document.createElement(t);if(c)e.className=c;Object.assign(e,a);return e};
-// ▼ ADD YOUR CONTACT LINKS HERE ▼
 const CONTACT={
- instagram:"https://www.instagram.com/ahmed.ecom_copy/", // e.g. "https://instagram.com/yourname"
+ instagram:"https://www.instagram.com/ahmed.ecom_copy/",
  whatsapp:"21658180847",  // digits only with country code, e.g. "21650123456"
- email:"ahmedhamdoun039@gmail.com"      // e.g. "you@example.com"
+ email:"ahmedhamdoun039@gmail.com"
 };
 (()=>{const m={"c-ig":CONTACT.instagram&&CONTACT.instagram,"c-wa":CONTACT.whatsapp&&"https://wa.me/"+CONTACT.whatsapp.replace(/\D/g,"")+"?text="+encodeURIComponent("Hi Ahmed, I saw your portfolio and I'd like to talk about my product."),"c-em":CONTACT.email&&"mailto:"+CONTACT.email+"?subject="+encodeURIComponent("Copywriting project")};
-for(const id in m){const a=document.getElementById(id);if(m[id]){if(id==="c-em"){a.href="#contact";a.addEventListener("click",e=>{e.preventDefault();$("#em2").hidden=!$("#em2").hidden})}else{a.href=m[id];a.target="_blank";a.rel="noopener"}}else{a.classList.add("off");a.title="Add your link in the code (CONTACT)";a.addEventListener("click",e=>e.preventDefault())}}})();
-if(CONTACT.email){const E=CONTACT.email,q=encodeURIComponent("Copywriting project");$("#ea").textContent=E;$("#gm").href="https://mail.google.com/mail/?view=cm&to="+E+"&su="+q;$("#ml").href="mailto:"+E+"?subject="+q;$("#cp").onclick=async e=>{try{await navigator.clipboard.writeText(E);e.target.textContent="Copied ✓"}catch(x){const r=document.createRange();r.selectNodeContents($("#ea"));getSelection().removeAllRanges();getSelection().addRange(r);e.target.textContent="Now press copy"}}}
+for(const id in m){const a=document.getElementById(id);if(m[id]){if(id==="c-em"){const E=CONTACT.email,su=encodeURIComponent("Copywriting project"),bd=encodeURIComponent("Hi Ahmed, I saw your portfolio and I'd like to talk about my product.");a.href="https://mail.google.com/mail/?view=cm&fs=1&to="+E+"&su="+su+"&body="+bd;a.target="_blank";a.rel="noopener";a.addEventListener("click",e=>{if(matchMedia("(pointer:coarse)").matches||innerWidth<=760){e.preventDefault();location.href="mailto:"+E+"?subject="+su+"&body="+bd}})}else{a.href=m[id];a.target="_blank";a.rel="noopener"}}else{a.classList.add("off");a.addEventListener("click",e=>e.preventDefault())}}})();
 // marquee
-const words=["Hooks","Meta Ads","UGC Scripts","Product Pages","VSL","Offers","CTAs","Direct Response","Conversion","Darija Copy","Creative Strategy"];
+const words=["Hooks","Meta Ads","UGC Scripts","Product Pages","VSL","Offers","CTAs","Direct Response","Conversion","Tunisian Copy","French Copy","English Copy","Arabic Copy","Creative Strategy"];
 $("#mq").innerHTML=[...words,...words].map(w=>`<span>${w}</span>`).join("")+[...words,...words].map(w=>`<span>${w}</span>`).join("");
-$("#mq").innerHTML=($("#mq").innerHTML.slice(0,$("#mq").innerHTML.length));
 // services
 const S=[
 ["Meta ad copy","Hooks, primary text, headlines and CTAs that stop the scroll.","Ads that get scrolled past because they describe instead of provoke.","ركبتك توجعك كي تطلع الدروج؟"],
 ["UGC / ad scripts","Scripts built on attention, problem, desire, action.","Creators who read a spec sheet to camera.","كل صباح نفس الحكاية… أول خطوة وكعبي يصيح."],
-["Product page copy","Features turned into reasons to buy.","Visitors who scroll, nod, and leave without buying.","موش بس دعامة. هي الفرق بين «نقعد» و«نخرج مع عايلتي»."],
-["VSL copy","Long-form scripts matched to how aware the customer is.","Cold traffic that needs a story before an offer.","تتخيل تفيق صباح وما تخممش في خطوتك الأولى؟"],
+["Product page copy","Features turned into reasons to buy.","Visitors who scroll, nod, and leave without buying.","ماهيش دعامة كهو. اما هي الفرق بين «نقعد» ولا «نخرج مع عايلتي»."],
+["VSL copy","Long-form scripts matched to how aware the customer is.","Cold traffic that needs a story before an offer.","تخيل تفيق الصباح وما تخممش في خطوتك الأولى كيفاش باش  تكون ؟"],
 ["Hooks & angles","Many angles, so we find the one that's impossible to ignore.","One angle, tested to death, with falling CTR.","Same product. Five openings. Five different customers."],
-["Offer & conversion copy","Value, objections, difference, action.","Good traffic, low conversion, no reason to order today.","الدفع عند الاستلام. جرب وانت مرتاح."]];
-const sv=$("#svc");S.forEach(([t,s,p,e])=>{const b=h("button","",{type:"button"});b.setAttribute("aria-expanded","false");b.innerHTML=`<div class="h"><span>${t}</span><small>${s}</small></div><div class="d"><div><div class="cols"><div><h4>What I do</h4>${s}</div><div><h4>Problem it solves</h4>${p}</div><div><h4>Example</h4><q class="${/[\u0600-\u06FF]/.test(e)?'ar':''}">${e}</q></div></div></div></div>`;b.onclick=()=>{const o=b.getAttribute("aria-expanded")==="true";sv.querySelectorAll("button").forEach(x=>x.setAttribute("aria-expanded","false"));b.setAttribute("aria-expanded",!o)};sv.append(b)});
+["Offer & conversion copy","Value, objections, difference, action.","Good traffic, low conversion, no reason to order today.","أخلط على ال40% promo في أخر 100 كعبة"]];
+const sv=$("#svc");S.forEach(([t,s,p,e])=>{const b=h("button","",{type:"button"});b.setAttribute("aria-expanded","false");b.innerHTML=`<div class="h"><span>${t}</span><small>${s}</small></div><div class="d"><div><div class="cols"><div><h4>What I do</h4>${s}</div><div><h4>Problem it solves</h4>${p}</div><div><h4>Example</h4><q class="${/[\u0600-\u06FF]/.test(e)?'ar':''}" lang="${/[\u0600-\u06FF]/.test(e)?'ar':'en'}">${e}</q></div></div></div></div>`;b.onclick=()=>{const o=b.getAttribute("aria-expanded")==="true";sv.querySelectorAll("button").forEach(x=>x.setAttribute("aria-expanded","false"));b.setAttribute("aria-expanded",!o)};sv.append(b)});
 // steps
-const T=[["Understand the customer","Who is scrolling? Age, worry, language, what they do before bed.","Real people, not personas."],["Find the pain","The exact moment it hurts. Stairs. Prayer. First step out of bed.","Specific beats general."],["Identify the desire","What they want their day to feel like once the pain isn't the main character.","Desire sells. Features explain."],["Build the angle","One clear way into the product that nobody else is using.","The angle is the ad."],["Write the hook","The first line decides if the rest exists.","Make them stop."],["Create the offer","Value, risk-reversal, reason to act today.","Make yes easy."],["Make the action obvious","One next step. Zero doubt about what happens.","Tell them what to do."]];
+const T=[["Understand the customer","Who is scrolling? Age, worry, language, what they do before bed.","Real people, not personas."],["Find the pain","The exact moment it hurts. Stairs. Prayer. First step out of bed.","Specific beats general."],["Identify the desire","What they want their day to feel like once the pain isn't the main character.","Desire sells. Features explain."],["Build the angle","One clear way into the product that nobody else is using.","The angle is the ad."],["Write the hook","The first line decides if the rest exists.","Make them stop."],["Create the offer","Value, risk-reversal, reason to act today.","Make yes easy."],["Check the platform rules","Hooks that respect Meta ad policies: no pointing at a health condition, no miracle claims.","An ad that gets rejected sells nothing."],["Make the action obvious","One next step. Zero doubt about what happens.","Tell them what to do."]];
 const sl=$("#sl");T.forEach((t,i)=>{const li=h("li");const b=h("button","",{type:"button"});b.setAttribute("role","tab");b.setAttribute("aria-selected",i==0);b.innerHTML=`<span>0${i+1}</span>${t[0]}`;b.onclick=b.onmouseenter=()=>{sl.querySelectorAll("button").forEach(x=>x.setAttribute("aria-selected","false"));b.setAttribute("aria-selected","true");$("#sdt").textContent=t[1];$("#sdn").textContent=t[2]};li.append(b);sl.append(li)});
 $("#sdt").textContent=T[0][1];$("#sdn").textContent=T[0][2];
 // work
 
-// GOOGLE DOCS: paste each link between the quotes in u:"" (make sure sharing is "Anyone with the link can view")
-const DOCS=[{t:"ahmed_hamdoun1",u:"https://docs.google.com/document/d/1h5igACARNb2Q3XjM0w3CoAoFK--Y-Ufw9jsynFuST9s/edit?usp=sharing"}];
-$("#docs").innerHTML=DOCS.map(d=>d.u?`<a class="dc" href="${d.u}" target="_blank" rel="noopener noreferrer"><span>Read the full doc ↗</span><small>📄 ${d.t}</small></a>`:`<div class="dc em"><span>${d.t}</span><span>Link coming soon</span></div>`).join("");
+const DOCS=[{t:"Read the full doc ↗",u:"https://docs.google.com/document/d/1h5igACARNb2Q3XjM0w3CoAoFK--Y-Ufw9jsynFuST9s/edit?usp=sharing"}];
+$("#docs").innerHTML=DOCS.map(d=>d.u?`<a class="dc" href="${d.u}" target="_blank" rel="noopener noreferrer"><span>Venacalm<br>جال شوكة القدم </span><small>📄 ${d.t}</small></a>`:`<div class="dc em"><span>${d.t}</span><span>Link coming soon</span></div>`).join("");
 const W=[
-{t:"Knee support",tag:"Compression knee brace · Adults 45–65",h:"ركبتك توجعك كي تطلع الدروج؟",prod:"Compression knee support. Spec concept for the Tunisian market.",aud:"Adults 45–65 living with everyday knee discomfort who still want to keep up with family.",prob:"Pain on stairs, after standing long, during prayer. Gels and sessions that only feel temporary. Fear of surgery.",des:"Move through the day without planning around the knee. Stay active with the grandchildren.",ang:"The pain isn't only when you walk. It follows you to the places that matter.",weak:"Compression knee support for better stability.",copy:"ركبتك توجعك كي تطلع الدروج؟\nكي تقعد؟ حتى وقت الصلاة؟\n\nموش لازم تعيش وانت تحسب حساب كل خطوة.\nدعامة الركبة تعاونك تحس بثبات وراحة أكثر في حركتك اليومية، باش تمشي مع عايلتك بأريحية.\n\nأطلب توا. الدفع عند الاستلام.",why:["Names three real moments, not 'pain'.","Prayer shows cultural understanding.","No cure claims. Only comfort and stability.","One clear action."]},
-{t:"Plantar fasciitis",tag:"Arch support insoles · Foot pain",h:"أول خطوة من الفراش… وكعبك يصيح؟",prod:"Arch-support insoles for heel pain. Spec concept.",aud:"People on their feet all day, or anyone whose first morning steps hurt.",prob:"Heel pain at first steps, pain after walking, discomfort that makes every errand harder.",des:"Start the day without bracing for the first step.",ang:"Morning is when the heel tells on you.",weak:"Ergonomic insoles with arch support.",copy:"HOOK\nأول خطوة من الفراش… وكعبك يصيح؟\n\nPROBLEM\nتفيق، تحط رجلك، وتبدا نهارك بوجيعة.\n\nAGITATION\nوكل مشوار بعد يزيد يتقل: السوق، الخدمة، حتى الدار.\n\nMECHANISM\nدعم القوس يعاون يوزّع الضغط على الرجل بطريقة أريح.\n\nCTA\nجرب النعل وانت مرتاح. الدفع عند الاستلام.",why:["Hook for problem-aware buyers.","Awareness ladder: problem, agitation, mechanism, action.","Mechanism explains without clinical promises.","Language sounds like a neighbor, not a pharmacy leaflet."]},
-{t:"Anti-aging cream",tag:"Face cream · Visible wrinkles",h:"المراية ما تكذبش. بصّ في التجاعيد.",prod:"Face cream for visible signs of aging. Spec concept.",aud:"Women 35+ who notice fine lines and feel tired of generic 'anti-age' promises.",prob:"Fine lines and dull skin. Creams that all say the same thing.",des:"Look in the mirror and feel like themselves on a good day.",ang:"Not 'erase years'. Make the mirror moment feel better.",weak:"Anti-wrinkle cream with hyaluronic acid.",copy:"المراية ما تكذبش… بس ما تخليهاش تحكم عليك.\n\nكريم يهتم بملمس بشرتك وترطيبها كل يوم، باش تبان أنضر وأكثر راحة.\n\nمش وعود كبيرة. روتين صغير تحبو.\n\nأطلبي كريمك توا.",why:["Mirror is a universal, emotional trigger.","Humble claims build trust.","Differentiates by honesty vs 'miracle' creams.","Feminine address for the target buyer."]},
-{t:"Acne patch",tag:"Hydrocolloid patch · Visual + verbal hook",h:"الحبة ظهرت؟ ما تعصرهاش! ❌",prod:"Hydrocolloid pimple patch. Spec concept.",aud:"Teens and young adults who squeeze pimples by reflex.",prob:"Squeezing, marks, irritation, and a pimple that gets angrier.",des:"Skin that looks calm before the event, the photo, the date.",ang:"Stop the habit. Replace it with one sticker.",weak:"Hydrocolloid acne patches for blemish care.",copy:"الحبة ظهرت؟ ما تعصرهاش! ❌\n\nكل مرة تعصر، تزيد تغضب وتخلّي أثر.\nحط باتش عليها وخليها تهدا.\n\nنضيف. سهل. من غير ما تلمسها.\nأطلب توا.",why:["Imperative plus emoji = instant visual stop.","Names the exact reflex.","Offers a replacement action.","Short, native, scannable."]}];
-const wk=$("#wk");W.forEach((w,i)=>{const b=h("button","card rv",{type:"button"});b.innerHTML=`<div class="cm"><div><div class="tag">0${i+1} · ${w.tag}</div></div><div><h3>${w.t}</h3><p class="tag" style="margin:10px 0 0">Spec Work / Portfolio Concept → open case</p></div></div><div class="cp ar" lang="ar"><span>${w.h}</span></div>`;b.onclick=()=>open(w);wk.append(b)});
-function open(w){const D=(a,b,c="")=>`<div><dt>${a}</dt><dd class="${c}">${b}</dd></div>`;$("#cs").innerHTML=`<button class="x" onclick="dlg.close()">Close ✕</button><span class="spec">Spec Work / Portfolio Concept</span><h3>${w.t}</h3><dl>${D("1. Product",w.prod)}${D("2. Audience",w.aud)}${D("3. Problem",w.prob)}${D("4. Desire",w.des)}${D("5. Big angle",w.ang,"big")}${D("6. Hook",w.h,"big ar")}${D("7. Ad copy",w.copy.replace(/</g,"&lt;"),"copy ar")}${D("8. Why it works","<ul>"+w.why.map(x=>`<li>${x}</li>`).join("")+"</ul>")}${D("9. CTA",`<a class="btn fill" href="#contact" onclick="dlg.close()">Want this for your product →</a>`)}</dl>`;dlg.showModal()}
+{t:"Knee support",tag:"Compression knee brace · Adults 45–65",h:"ركبتك توجعك كي تطلع الدروج؟",prod:"Compression knee support. Spec concept for the Tunisian market.",aud:"Adults 45–65 living with everyday knee discomfort who still want to keep up with family.",prob:"Pain on stairs, after standing long, during prayer. Gels and sessions that only feel temporary. Fear of surgery.",des:"Move through the day without planning around the knee. Stay active with the grandchildren.",ang:"The pain isn't only when you walk. It follows you to the places that matter.",weak:"Compression knee support for better stability.",en:"Does your knee hurt on the stairs? When you sit? Even during prayer? You don't have to plan your life around every step. The knee support helps you feel steadier and more comfortable in daily movement, so you can walk with your family with ease. Order now. Cash on delivery.",copy:"ركبتك توجعك كي تطلع الدروج؟\nكي تقعد؟ حتى وقت الصلاة؟\n\nموش لازم تعيش وانت تحسب حساب كل خطوة.\nدعامة الركبة تعاونك تحس بثبات وراحة أكثر في حركتك اليومية، باش تمشي مع عايلتك بأريحية.\n\nأطلب توا. الدفع عند الاستلام.",why:["Names three real moments, not 'pain'.","Prayer shows cultural understanding.","No cure claims. Only comfort and stability.","One clear action."]},
+{t:"Plantar fasciitis",tag:"Arch support insoles · Foot pain",h:"أول خطوة من الفرش… وقدمك تسطر؟",prod:"Arch-support insoles for heel pain. Spec concept.",aud:"People on their feet all day, or anyone whose first morning steps hurt.",prob:"Heel pain at first steps, pain after walking, discomfort that makes every errand harder.",des:"Start the day without bracing for the first step.",ang:"Morning is when the heel tells on you.",weak:"Ergonomic insoles with arch support.",en:"HOOK: First step out of bed… and your heel screams? PROBLEM: You wake up, put your foot down, and start the day in pain. AGITATION: Every trip after that gets heavier: the market, work, even home. MECHANISM: Arch support helps spread pressure across the foot more comfortably. CTA: Try the insole in comfort. Cash on delivery.",copy:"HOOK\nأول خطوة من الفرش… وكعبك يصيح؟\n\nPROBLEM\nتفيق، تحط رجلك، وتبدا نهارك بوجيعة.\n\nAGITATION\nوكل مشوار بعد يزيد يثقل: السوق، الخدمة، حتى الدار.\n\nMECHANISM\nدعم القوس يعاون يوزّع الضغط عل القدم بطريقة أريح.\n\nCTA\nجرب النعل وانت مرتاح. الدفع عند الاستلام.",why:["Hook for problem-aware buyers.","Awareness ladder: problem, agitation, mechanism, action.","Mechanism explains without clinical promises.","Language sounds like a neighbor, not a pharmacy leaflet."]},
+{t:"Anti-aging cream",tag:"Face cream · Visible wrinkles",h:"المراية ما تكذبش. شوف التجاعيد.",prod:"Face cream for visible signs of aging. Spec concept.",aud:"Women 35+ who notice fine lines and feel tired of generic 'anti-age' promises.",prob:"Fine lines and dull skin. Creams that all say the same thing.",des:"Look in the mirror and feel like themselves on a good day.",ang:"Not 'erase years'. Make the mirror moment feel better.",weak:"Anti-wrinkle cream with hyaluronic acid.",en:"The mirror doesn't lie… but don't let it judge you. A cream that cares for your skin's texture and hydration every day, so you look and feel more comfortable in your skin. No big promises. A small routine you'll love. Order your cream now.",copy:"المراية ما تكذبش…  أما ما تخليهاش تحكم عليك.\n\nكريمة تهتم بملمس بشرتك وترطيبها كل يوم، باش تبان أصغر وأكثر راحة.\n\nموش وعود كبيرة. روتين صغير تحبو.\n\nأطلب كريمك توا.",why:["Mirror is a universal, emotional trigger.","Humble claims build trust.","Differentiates by honesty vs 'miracle' creams.","Feminine address for the target buyer."]},
+{t:"Acne patch",tag:"Hydrocolloid patch · Visual + verbal hook",h:"كان كل ماتطلعلك حبة في وجهك تمسها بيديك راك قاعد تضر في روحك ❌",prod:"Hydrocolloid pimple patch. Spec concept.",aud:"Teens and young adults who squeeze pimples by reflex.",prob:"Squeezing, marks, irritation, and a pimple that gets angrier.",des:"Skin that looks calm before the event, the photo, the date.",ang:"Stop the habit. Replace it with one sticker.",weak:"Hydrocolloid acne patches for blemish care.",en:"If a pimple shows up on your face, don't squeeze it. Every time you touch and pop it, it gets bigger and leaves a mark. Put a patch on it and let it fade. Clean. Easy. Hands off. Order now.",copy:"كان طلعلك حب في وجهك رد بالك تبربشو ❌\n\nكل مرة تمسها و تبربشها، تزيد تكبر و تخلّي trace .\nحط باتش عليها وخليها تتنحا.\n\nنضيف. ساهل. من غير ما تمسها.\nأطلب توا.",why:["Imperative plus emoji = instant visual stop.","Names the exact reflex.","Offers a replacement action.","Short, native, scannable."]}];
+const wk=$("#wk");W.forEach((w,i)=>{const b=h("button","card rv",{type:"button"});b.innerHTML=`<div class="cm"><div><div class="tag">0${i+1} · ${w.tag}</div></div><div><h3>${w.t}</h3><p class="tag" style="margin:10px 0 0">Spec Work / Portfolio Concept → open case</p></div></div><div class="cp ar" lang="ar"><span>${w.h}</span></div>`;b.onclick=()=>openCase(w);wk.append(b)});
+function openCase(w){const D=(a,b,c="")=>`<div><dt>${a}</dt><dd class="${c}">${b}</dd></div>`;$("#cs").innerHTML=`<button class="x" onclick="dlg.close()">Close ✕</button><span class="spec">Spec Work / Portfolio Concept</span><h3>${w.t}</h3><dl>${D("1. Product",w.prod)}${D("2. Audience",w.aud)}${D("3. Problem",w.prob)}${D("4. Desire",w.des)}${D("5. Big angle",w.ang,"big")}${D("6. Hook",w.h,"big ar")}${D("7. Ad copy",`<div class="fb"><div class="fbh"><i></i><span><b>Your Brand</b><small>Sponsored</small></span></div><div class="copy ar" lang="ar">${w.copy.replace(/</g,"&lt;")}</div><div class="fbi">Product image</div><div class="fbc"><span>Cash on delivery</span><b>Order now</b></div></div><details class="en"><summary>English translation</summary><p>${w.en}</p></details>`)}${D("8. Why it works","<ul>"+w.why.map(x=>`<li>${x}</li>`).join("")+"</ul>")}${D("9. CTA",`<a class="btn fill" href="#contact" onclick="dlg.close()">Want this for your product →</a>`)}</dl>`;dlg.showModal()}
 const dlg=$("#dlg");dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
 // before/after
-const B=[["High quality knee support for pain relief.","ركبتك توجعك حتى كي تقعد؟\nالمشكل موش ديما في المشي."],["Premium anti-aging face cream.","شكون قالك لازم تستنى «العمر» باش تهتم ببشرتك؟"],["Orthopedic insoles. Comfortable all day.","نهارك يبدا بوجيعة في كعبك؟ خلّي أول خطوة أخف."],["Effective pimple patches. Order now.","الحبة ظهرت؟ ما تعصرهاش! ❌"]];
+const B=[["High quality knee support for pain relief.","ركبتك توجعك حتى كي تقعد؟\nالمشكل موش ديما في المشي."],["Premium anti-aging face cream.","شكون قالك لازم تستنى «العمر» باش تهتم ببشرتك؟"],["Orthopedic insoles. Comfortable all day.","نهارك يبدا بوجيعة في كعبك؟ خلّي أول خطوة أخف."],["Effective pimple patches. Order now.","كان طلعلك حب في وجهك رد بالك تبربشو  ❌"]];
 $("#ba").innerHTML=B.map(([a,b])=>`<button class="bx" type="button"><span class="b"><small>BEFORE</small>${a}</span><span class="a ar" lang="ar" style="direction:rtl"><small style="direction:ltr;text-align:left">AFTER</small>${b.replace(/\n/g,"<br>")}</span></button>`).join("");
 document.querySelectorAll(".bx").forEach(b=>b.onclick=()=>b.classList.toggle("on"));
 // would you buy
@@ -392,20 +402,6 @@ document.querySelectorAll(".rv").forEach(e=>io.observe(e));
 const cur=$(".cur");addEventListener("pointermove",e=>{cur.style.transform=`translate(${e.clientX-7}px,${e.clientY-7}px)`;cur.classList.toggle("big",!!e.target.closest("a,button"))},{passive:true});
 
 
-// Inspect mode: open the page with #code at the end of the link
-if(location.hash==="#code"){
-const st=h("style");st.textContent="[data-ins]{outline:2px dashed #ff2d95!important;outline-offset:2px}";document.head.append(st);
-const pn=h("div");pn.style.cssText="position:fixed;left:0;right:0;bottom:0;height:42vh;z-index:200;background:#0f0f14;color:#e8e8f0;font:13px/1.5 ui-monospace,Menlo,monospace;overflow:auto;padding:12px 16px calc(env(safe-area-inset-bottom,0px) + 12px);border-top:3px solid #ffd23f";
-pn.innerHTML='<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:8px"><b style="color:#ffd23f">Inspect mode</b><button id="ti" style="min-height:40px;padding:0 16px;border-radius:99px;border:0;background:#ffd23f;color:#111;font-weight:700;cursor:pointer">ON</button><span style="opacity:.7">Click anything to see its code. Switch OFF to use the page normally.</span></div><pre id="out" style="margin:0;white-space:pre-wrap;word-break:break-word">Click an element…</pre>';
-document.body.append(pn);document.body.style.paddingBottom="42vh";
-let on=true,hv=null;const ti=pn.querySelector("#ti"),out=pn.querySelector("#out");
-ti.onclick=()=>{on=!on;ti.textContent=on?"ON":"OFF";if(hv){hv.removeAttribute("data-ins");hv=null}};
-document.addEventListener("mouseover",e=>{if(!on||pn.contains(e.target))return;if(hv)hv.removeAttribute("data-ins");hv=e.target;hv.setAttribute("data-ins","")},true);
-document.addEventListener("click",e=>{if(!on||pn.contains(e.target))return;e.preventDefault();e.stopPropagation();const el=e.target;el.removeAttribute("data-ins");let html=el.outerHTML;if(html.length>700)html=html.slice(0,700)+"\n… (trimmed)";const rules=[];
-const walk=(rs,pre)=>{for(const r of rs){if(r.selectorText){try{if(el.matches(r.selectorText))rules.push(pre+r.cssText)}catch(x){}}else if(r.cssRules)walk(r.cssRules,r.conditionText?"@media "+r.conditionText+" → ":pre)}};
-for(const ss of document.styleSheets){try{walk(ss.cssRules,"")}catch(x){}}
-out.textContent="── HTML ──\n"+html+"\n\n── CSS that styles it ──\n"+(rules.slice(0,30).join("\n")||"(none)")},true);
-}
 </script>
 </body>
 </html>
